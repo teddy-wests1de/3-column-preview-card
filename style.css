@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+  --transparent-white-p: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--transparent-white-p);
+}
+
+.container {
+  min-width: 375px;
+  max-width: 900px;
+  margin: 4rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 80%;
+  padding: 2.5rem;
+  margin: 0 1rem;
+}
+.sedans {
+  background-color: var(--bright-orange);
+}
+.suv {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.description {
+  line-height: 1.5rem;
+  margin: 1.5rem 0;
+  padding-right: 0.7rem;
+}
+
+.learn-more {
+  margin-top: 1rem;
+  font-size: inherit;
+  padding: 0.5rem 1rem;
+  background-color: var(--very-light-gray);
+  font-weight: 700;
+  border-style: solid;
+  border-radius: 1.5rem;
+}
+
+.btn-sedans {
+  color: var(--bright-orange);
+  text-decoration: none;
+}
+.btn-suvs {
+  color: var(--dark-cyan);
+  text-decoration: none;
+}
+.btn-luxury {
+  color: var(--very-dark-cyan);
+  text-decoration: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.learn-more:hover {
+  background-color: inherit;
+  color: var(--transparent-white-p);
+  border: 2px solid var(--transparent-white-p);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: orange;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+  .card {
+    margin: 0;
+  }
+  .attribution {
+    width: 100%;
+    display: block;
+  }
+}
