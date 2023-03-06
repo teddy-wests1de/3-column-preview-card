@@ -36,7 +36,8 @@ body {
   min-width: 375px;
   max-width: 900px;
   margin: 4rem 1rem;
-  border-radius: 10px;
+  border-radius: 0.5rem;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,6 +62,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
+  color: var(--very-light-gray);
 }
 .description {
   line-height: 1.5rem;
@@ -111,6 +113,8 @@ a {
 
 @media screen and (min-width: 900px) {
   .container {
+    border-radius: 0.5rem;
+    overflow: hidden;
     flex-wrap: nowrap;
   }
   .card {
